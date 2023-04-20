@@ -1,0 +1,44 @@
+pluto.txt
+localhost:/home/animals/dogs# cd /home
+localhost:/home# cd animals
+localhost:/home/animals# cd cats
+localhost:/home/animals/cats# touch garfild.txt
+localhost:/home/animals/cats# cd /home
+localhost:/home# cd animals
+localhost:/home/animals# cd fish
+localhost:/home/animals/fish# touch nemo.txt
+localhost:/home/animals/fish# ls -a
+.         ..        nemo.txt
+localhost:/home/animals/fish# cd /home
+localhost:/home# ls -a
+.        ..       animals
+localhost:/home# cd animals
+localhost:/home/animals# ls -a
+.     ..    cats  dogs  fish                                                                                                                              
+localhost:/home/animals# tree /home/
+/home/
+└── animals
+    ├── cats
+    │   └── garfild.txt
+    ├── dogs
+    │   └── pluto.txt
+    └── fish
+        └── nemo.txt
+ 
+4 directories, 3 files
+localhost:/home/animals#
+localhost:~# cd /tmp
+localhost:/tmp# touch adam.txt
+localhost:/tmp# mkdir -p /home/humars
+localhost:/tmp# cp /tmp/adam.txt /home/humars
+localhost:/tmp# touch evA.txt
+localhost:/tmp# mv /tmp/evA.txt /opt/eve.txt
+localhost:/tmp# mv /opt/eve.txt /home/humars
+localhost:/tmp# tree /home
+/home
+└── humars
+    ├── adam.txt
+    └── eve.txt
+ 
+1 directory, 2 files
+localhost:/tmp#
